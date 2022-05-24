@@ -3,28 +3,11 @@
     background-color:rgba(255,255,255,0);
     border:1px solid #000;
     border-radius:2px;
+    padding:20px;
     text-align:center;
   }
   .grid {
-    display:grid;
-    grid: 100px auto 150px / repeat(8, 1fr);
-    grid-template-areas:
-      "h h h h  h h h h"
-      "c c c c  c c s s"
-      "f f f f  f f f f";
-    min-height: 100vh;
+  display:grid;
+    grid-template: 100px 100px 100px/ repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 10px;
-  }
-  
-  .header {
-    grid-area: h;
-  }
-  .content {
-    grid-area: c;
-  }
-  .sidebar {
-    grid-area: s;
-  }
-  .footer {
-    grid-area: f;
   }
