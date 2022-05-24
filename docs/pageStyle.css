@@ -1,2 +1,30 @@
-p { color:Red; font-size:12px;}
-h1 {color:blue; font-size:20px;}
+.grid > * { 
+    color:#000;
+    background-color:rgba(255,255,255,0);
+    border:1px solid #000;
+    border-radius:2px;
+    text-align:center;
+  }
+  .grid {
+    display:grid;
+    grid: 100px auto 150px / repeat(8, 1fr);
+    grid-template-areas:
+      "h h h h  h h h h"
+      "c c c c  c . s s"
+      "f f f f  f f f f";
+    min-height: 100vh;
+    grid-gap: 10px;
+  }
+  
+  .header {
+    grid-area: h;
+  }
+  .content {
+    grid-area: c;
+  }
+  .sidebar {
+    grid-area: s;
+  }
+  .footer {
+    grid-area: f;
+  }
