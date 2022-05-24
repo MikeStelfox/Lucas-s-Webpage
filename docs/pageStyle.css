@@ -10,7 +10,7 @@
     grid: 100px auto 150px / repeat(8, 1fr);
     grid-template-areas:
       "h h h h  h h h h"
-      "c c c c  c . s s"
+      "c c c c  c c s s"
       "f f f f  f f f f";
     min-height: 100vh;
     grid-gap: 10px;
